@@ -14,5 +14,5 @@ defmodule RPGCalculator do
 
   defp calculate_attribute_cost({ :strength, value }) do 2 * value end
   defp calculate_attribute_cost({ key, value }) when key in [:dexterity, :intelligence] do 3 * value end
-  defp calculate_attribute_cost ({ key, _ }) do raise "Incorrect attribute name: #{key}" end
+  defp calculate_attribute_cost({ key, _ }) do raise "Incorrect attribute name: #{key}" end
 end
